@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Architect.io | Full-Stack Web Developer Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#131313",
+              "secondary-fixed-dim": "#b7c4ff",
+              "primary-container": "#00717e",
+              "surface-container-low": "#1c1b1b",
+              "tertiary-fixed": "#ffdbd2",
+              "background": "#131313",
+              "tertiary-container": "#bf3003",
+              "outline": "#8d90a2",
+              "on-primary": "#00363d",
+              "primary": "#00daf3",
+              "tertiary-fixed-dim": "#ffb4a1",
+              "on-tertiary": "#611300",
+              "on-surface": "#e5e2e1",
+              "surface-bright": "#393939",
+              "surface-container-highest": "#353534",
+              "surface": "#131313",
+              "outline-variant": "#434656",
+              "surface-tint": "#00daf3",
+              "on-error": "#690005",
+              "on-primary-container": "#a5f1ff",
+              "on-secondary": "#0e2977",
+              "on-background": "#e5e2e1",
+              "on-error-container": "#ffdad6",
+              "surface-container": "#201f1f",
+              "surface-variant": "#353534",
+              "on-primary-fixed": "#001f24",
+              "on-secondary-fixed-variant": "#2b418f",
+              "on-tertiary-fixed-variant": "#891e00",
+              "error": "#ffb4ab",
+              "on-secondary-fixed": "#001452",
+              "surface-container-lowest": "#0e0e0e",
+              "on-primary-fixed-variant": "#004f58",
+              "secondary-fixed": "#dde1ff",
+              "primary-fixed": "#9cf0ff",
+              "on-secondary-container": "#9fb1ff",
+              "secondary": "#b7c4ff",
+              "inverse-on-surface": "#313030",
+              "inverse-primary": "#006875",
+              "on-tertiary-container": "#ffddd5",
+              "inverse-surface": "#e5e2e1",
+              "tertiary": "#ffb4a1",
+              "primary-fixed-dim": "#00daf3",
+              "secondary-container": "#2b418f",
+              "surface-container-high": "#2a2a2a",
+              "on-surface-variant": "#c3c5d9",
+              "error-container": "#93000a",
+              "on-tertiary-fixed": "#3c0800"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .tonal-shift-bg { background-color: #131313; }
+      .no-line { border: none !important; }
+      .glass-effect { backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-[#131313]/70 backdrop-blur-xl no-line tonal-shift-bg">
+<div class="flex justify-between items-center px-6 md:px-16 py-6 max-w-[1440px] mx-auto w-full">
+<span class="text-2xl font-black tracking-tighter text-white">Architect.io</span>
+<div class="hidden md:flex gap-10">
+<a class="font-manrope uppercase tracking-tighter font-bold text-sm text-white/60 hover:text-white transition-colors" href="#about">About</a>
+<a class="font-manrope uppercase tracking-tighter font-bold text-sm text-white/60 hover:text-white transition-colors" href="#services">Services</a>
+<a class="font-manrope uppercase tracking-tighter font-bold text-sm text-white/60 hover:text-white transition-colors" href="#skills">Skills</a>
+<a class="font-manrope uppercase tracking-tighter font-bold text-sm text-white/60 hover:text-white transition-colors" href="#portfolio">Portfolio</a>
+<a class="font-manrope uppercase tracking-tighter font-bold text-sm text-white/60 hover:text-white transition-colors" href="#contact">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-manrope uppercase tracking-tighter font-bold text-sm scale-95 active:scale-90 transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,218,243,0.3)]">
+                Hire Me
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center px-6 md:px-20 py-20 overflow-hidden">
+<!-- Background Accent -->
+<div class="absolute top-1/4 -right-20 w-96 h-96 bg-primary/5 rounded-full blur-[120px]"></div>
+<div class="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<span class="inline-block label-md text-primary uppercase tracking-[0.2em] font-bold mb-6">Full-Stack Architect</span>
+<h1 class="text-5xl md:text-7xl font-headline font-extrabold text-on-surface leading-[1.1] tracking-tighter mb-8">
+                        Full-Stack Web Developer Building <span class="text-primary">High-Performance</span> Digital Experiences.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-12 leading-relaxed">
+                        Expert in WordPress, Shopify, and custom-coded websites using HTML, CSS, JavaScript, and PHP. I help businesses create powerful online presence with clean design and user-friendly functionality.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-sm uppercase tracking-widest hover:shadow-[0_0_30px_rgba(0,218,243,0.4)] transition-all">
+                            Start Your Project
+                        </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-full font-headline font-bold text-sm uppercase tracking-widest hover:bg-surface-bright transition-all">
+                            View Portfolio
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-xl overflow-hidden bg-surface-container-low border border-white/5 p-4 transform md:rotate-3">
+<img class="w-full h-full object-cover rounded-lg grayscale hover:grayscale-0 transition-all duration-700" data-alt="Modern minimalist workspace with high-end laptop, clean desk, and cinematic cool blue lighting reflecting off glass surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQakXnywHz1bVUrLPFcZ1nA4JOC1Kk86fY3RIEmQjhXnlsu5Jd1nXW2FrQfW4wQc9bNMXxJuRiXl4ljyei4HfoQcyjvzj8G3rCXs1NOtTZ6FhmEd1n9evTy-tDLhFd4MpiQ1LkpubwogaWTwnYfyBGTvc4X3sPon08EisBWer1QaVbTTeyWd4Q7xPelSpdFTE1O5Pc063AtlW0HOMcxIqgl2fdhcYY7I6QiJmJ2bBkWI0HVOs2BYaSanQA4_xcCP-skToMQpNJTvff"/>
+</div>
+<!-- Floating Tech Badge -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-high p-6 rounded-xl border border-white/10 glass-effect">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">developer_mode</span>
+<div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold">Status</p>
+<p class="text-white font-headline font-bold">Available for Projects</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- My Focus (Bento Style) -->
+<section class="py-32 px-6 md:px-20 bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto">
+<div class="mb-20">
+<h2 class="text-4xl font-headline font-bold tracking-tighter mb-4">The Strategic Approach</h2>
+<div class="w-20 h-1 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="p-10 bg-surface-container rounded-xl border border-white/5 hover:border-primary/30 transition-all group">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="palette">palette</span>
+<h3 class="text-xl font-headline font-bold mb-4">Clean &amp; Modern Design</h3>
+<p class="text-on-surface-variant">Editorial-grade aesthetics balanced with intuitive user flows.</p>
+</div>
+<div class="p-10 bg-surface-container rounded-xl border border-white/5 hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="devices">devices</span>
+<h3 class="text-xl font-headline font-bold mb-4">Mobile Responsive</h3>
+<p class="text-on-surface-variant">Seamless experiences across every screen size and device type.</p>
+</div>
+<div class="p-10 bg-surface-container-high rounded-xl border border-primary/20 md:row-span-2 flex flex-col justify-center">
+<span class="material-symbols-outlined text-primary mb-6 text-5xl" data-icon="verified" data-weight="fill">verified</span>
+<h3 class="text-2xl font-headline font-bold mb-4">100% Client Satisfaction</h3>
+<p class="text-on-surface-variant">A commitment to excellence and transparent communication at every milestone.</p>
+</div>
+<div class="p-10 bg-surface-container rounded-xl border border-white/5 hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="search">search</span>
+<h3 class="text-xl font-headline font-bold mb-4">SEO Friendly Structure</h3>
+<p class="text-on-surface-variant">Built from the ground up to be discovered by major search engines.</p>
+</div>
+<div class="p-10 bg-surface-container rounded-xl border border-white/5 hover:border-primary/30 transition-all">
+<span class="material-symbols-outlined text-primary mb-6 text-4xl" data-icon="bolt">bolt</span>
+<h3 class="text-xl font-headline font-bold mb-4">Fast Performance</h3>
+<p class="text-on-surface-variant">Optimized code and assets for sub-second loading times.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 px-6 md:px-20" id="services">
+<div class="max-w-[1440px] mx-auto grid md:grid-cols-2 gap-20">
+<div>
+<h2 class="text-5xl font-headline font-extrabold tracking-tighter mb-8 leading-tight">Tailored Solutions for <span class="text-primary">Digital Growth</span></h2>
+<p class="text-on-surface-variant text-lg mb-12">Leveraging the latest technologies to solve complex business problems through elegant code.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-6 bg-surface-container rounded-xl">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="font-headline font-bold">Business Websites</span>
+</div>
+<div class="flex items-center gap-4 p-6 bg-surface-container rounded-xl">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="font-headline font-bold">E-commerce Stores</span>
+</div>
+<div class="flex items-center gap-4 p-6 bg-surface-container rounded-xl">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="font-headline font-bold">Landing Pages</span>
+</div>
+<div class="flex items-center gap-4 p-6 bg-surface-container rounded-xl">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+<span class="font-headline font-bold">Maintenance &amp; Bug Fixes</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-1 overflow-hidden relative group">
+<img class="w-full h-full object-cover rounded-xl opacity-60 group-hover:scale-110 transition-transform duration-1000" data-alt="Close-up of clean code on a monitor with neon blue and purple ambient backlighting in a professional developer studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMrZ8JyVepLIfVHqjyaWTyQ1qOCL8AH1nTfmcYVKGn-VR_ejZ3iZBQ8MdqhX4eWwAgT0lEbhRFKXiedsUwiUSeJAP6R2nByS5Mp3eqBdGePv2JG3rh8--zolK1C_Z2BKBoOdAtLC2Oc5gRAnXZRBx_9dbjVYh0VCYu6ZAbf3jlYGMAlV3sc-SvU2ouX-CrHvwFyF3Iz7LjPPlZ48FRJA3pEUEUgZd49bsLmRoZU6bMDj1YuEFL9_dz_lnsGf6IqHfxMkeu8c1i5Dby"/>
+<div class="absolute inset-0 flex flex-col justify-end p-12 bg-gradient-to-t from-surface via-transparent to-transparent">
+<p class="text-primary font-bold uppercase tracking-widest text-sm mb-2">Expertise</p>
+<h3 class="text-3xl font-headline font-bold">Full-Stack Mastery</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-32 px-6 md:px-20 bg-surface-container-lowest" id="about">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row gap-24 items-center">
+<div class="md:w-1/3 relative">
+<div class="w-full aspect-[4/5] bg-surface-container rounded-2xl overflow-hidden relative z-10 border border-white/5">
+<img class="w-full h-full object-cover grayscale" data-alt="Professional portrait of a confident male developer in dark attire against a dark textured background with dramatic lighting" src="portfolio.pic/mein image.jpg"/>
+</div>
+<div class="absolute -top-10 -left-10 w-full h-full border-2 border-primary/20 rounded-2xl -z-0"></div>
+</div>
+<div class="md:w-2/3">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tighter mb-8">Architecting the Web</h2>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-8">
+                        I am a professional Full-Stack Web Developer with experience in building modern, responsive, and high-performing websites. My journey in the digital space began with a curiosity for how things work under the hood, leading me to master a diverse stack from PHP to modern JavaScript frameworks.
+                    </p>
+<p class="text-xl text-on-surface-variant leading-relaxed mb-12">
+                        I believe that every line of code should serve a purpose, and every design element should enhance the user experience. Whether it's a high-conversion Shopify store or a complex custom web application, I bring a precision-first mindset to every project.
+                    </p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="skills">
+<div class="bg-surface-container-highest py-3 px-6 rounded-lg text-center font-bold text-xs uppercase tracking-widest border border-white/5 flex items-center justify-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> WordPress
+                        </div>
+<div class="bg-surface-container-highest py-3 px-6 rounded-lg text-center font-bold text-xs uppercase tracking-widest border border-white/5 flex items-center justify-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Shopify
+                        </div>
+<div class="bg-surface-container-highest py-3 px-6 rounded-lg text-center font-bold text-xs uppercase tracking-widest border border-white/5 flex items-center justify-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> React.js
+                        </div>
+<div class="bg-surface-container-highest py-3 px-6 rounded-lg text-center font-bold text-xs uppercase tracking-widest border border-white/5 flex items-center justify-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> PHP/Laravel
+                        </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-32 px-6 md:px-20" id="portfolio">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex justify-between items-end mb-20">
+<div>
+<span class="label-md text-primary uppercase tracking-[0.2em] font-bold">Curated Work</span>
+<h2 class="text-5xl font-headline font-extrabold tracking-tighter mt-4">Selected Case Studies</h2>
+</div>
+<button class="hidden md:block text-primary font-bold uppercase tracking-widest text-sm border-b-2 border-primary/30 pb-1 hover:border-primary transition-all">Explore All Projects</button>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Project 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[16/10] bg-surface-container-low rounded-xl overflow-hidden mb-8 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" data-alt="Sleek e-commerce interface on a laptop screen featuring high-end fashion products and minimalist layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjoHDjWPeUsTIrXesDGhSEYgy0HPEMmlXp3zVXkufq1BMb5WUE3o5zRJUARGdh3lL8Y2ch1zYXxltmCPtO4KvwybuyDSfHZYkAn8X69e3tcIaLovFllU07R0AYWoWdFVH_velcZWtoMTbGF_aRj9zdjQM9rGYqbddV1P5RxIO-F3ZV90UK6c-6zDV0GsmNfXU25-qvZP97lBrfWQ10xVQY6BpzKyOvHzjacKO7Xav8yyQmWAJpreH9Jxe9y8zG2mcwMyFZPUSjADh2"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-2xl font-headline font-bold mb-2">Vanguard Retail</h3>
+<p class="text-on-surface-variant font-medium">Headless Shopify • Performance Optimization</p>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="north_east">north_east</span>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group cursor-pointer md:mt-24">
+<div class="aspect-[16/10] bg-surface-container-low rounded-xl overflow-hidden mb-8 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100" data-alt="Data visualization dashboard on a large tablet screen with elegant charts and deep blue interface theme" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkTVNGysqJ_Zbdrkxmlxb8xQKvioouqqKJJlktUa9tVRstV5i5qa0lGVycSzOOAL8i_ScBIrl9a6SwH9rcBa9jGGu57bEGN96FPJa8YxQdQ9Vw0PIK3CQj5NDESZi0RsukpvgJ7MOrf4E4tdWBe-KxVbFeBWSJaXEYbj_QNtFBrWiDBNk2Wbl_3d6AEfivgovz8xtpKYoOPGH7IkyjnyWMr_RjrSjTVmLlvorT9hLL_cEDMD_sCFbWUkyeqtk1p8DGb5vVlJ05BIfE"/>
+<div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-2xl font-headline font-bold mb-2">Nexus Analytics</h3>
+<p class="text-on-surface-variant font-medium">Custom PHP SaaS • Dashboard Design</p>
+</div>
+<span class="material-symbols-outlined text-primary" data-icon="north_east">north_east</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 px-6 md:px-20 bg-surface-container">
+<div class="max-w-[1440px] mx-auto overflow-hidden">
+<div class="flex items-center gap-8 mb-16">
+<h2 class="text-3xl font-headline font-bold shrink-0">Trusted by Visionaries</h2>
+<div class="h-px w-full bg-white/10"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="p-10 bg-surface-container-low rounded-xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-8 right-8" data-icon="format_quote">format_quote</span>
+<p class="text-lg text-on-surface mb-8 italic relative z-10">"The attention to detail in the backend architecture was impressive. Our site speed improved by 200% after the migration."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Corporate headshot of a professional executive with a clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkSyKGE-7vN6o0PbXIY_NUlifyGU-nkG1YC0rfCPy5VDuO_Q6RlWCV64QalcdiK9m42jx-CWCYQheBT45n6pQaQgVH_OieGNqX2e25atX81VcF0HhJhFC3826a2MHG81jfRimp-ryskcTeg2DXFrENPNJJaDsJi5UvG4PGsDr9FUo2VQ3_Nas8i65xMxnXEqf58gHNnD9rxtshVgAEqlAt1GbDuoBfPZmNJsjtZHHK91U3R4is7LfPnOxpPpmZWFX9N5wnTndHSe_m"/>
+</div>
+<div>
+<p class="font-bold text-sm">Marcus Chen</p>
+<p class="text-xs text-primary uppercase font-bold tracking-widest">CTO, Zenith</p>
+</div>
+</div>
+</div>
+<div class="p-10 bg-surface-container-low rounded-xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-8 right-8" data-icon="format_quote">format_quote</span>
+<p class="text-lg text-on-surface mb-8 italic relative z-10">"He didn't just build a site; he built a growth engine. Our conversion rates have skyrocketed since the launch."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Professional headshot of a business owner in a modern office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxVd8-24QliYHLAqmJMpE03f-RpgjtdBv4OcpCileF4vGH_c8X5lYIYPbIXtEk0m8SvS798P2hQLOtNKgEEy7R-YOEmHy6K4UXwWrgjZoqeNf2kFxd76XS_EFS_Fu8QG2BG4-eLxn2FikRlGBqsx-YFGa_j6S812sdR4ewk_VA4gjxelrB85-UwpMfefA7ScJnxe5GtQDzOrVcMiM7J7iCrHj-30x1nAB-hLGGQ9QshimJRuoheDtrNjETo63aw9M2_HdPTHz5CMGW"/>
+</div>
+<div>
+<p class="font-bold text-sm">Sarah Jenkins</p>
+<p class="text-xs text-primary uppercase font-bold tracking-widest">Founder, Bloom</p>
+</div>
+</div>
+</div>
+<div class="p-10 bg-surface-container-low rounded-xl relative">
+<span class="material-symbols-outlined text-primary/20 text-6xl absolute top-8 right-8" data-icon="format_quote">format_quote</span>
+<p class="text-lg text-on-surface mb-8 italic relative z-10">"A true professional who understands both code and business. Rare to find a developer who also cares about UI/UX."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a creative professional with a friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoox7Ql5i0oyJ4Yq_JSdtaWz4mkxTEbbWldTVNG0hvM_nZFVOz5G07Bd42QyFoeGOhpIxDENId0v0QFBT31C5elsCmWUwVQzmwrLYbzLhcSeC8b8eEsvSpW1SyLYUt_qjogYkljJtSlvv2GU1OxjgyUty6srzL5LxK-aRJSxjeTz7PCqYyWEG_ALhQANWxHl-EIQxBH_AFoQ5MnLBPOtjyIFmj4NzKIra_i1yf2k0NgAVA6mEz6YCFs_vBhbZGmJ4AbDTHGH0E_ZtM"/>
+</div>
+<div>
+<p class="font-bold text-sm">David Rossi</p>
+<p class="text-xs text-primary uppercase font-bold tracking-widest">Lead Designer, Studio X</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 px-6 md:px-20 relative" id="contact">
+<div class="max-w-[1440px] mx-auto bg-surface-container-low rounded-[2.5rem] p-12 md:p-24 border border-white/5 overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-primary/5 blur-[100px] -z-10"></div>
+<div class="grid md:grid-cols-2 gap-20">
+<div>
+<h2 class="text-5xl font-headline font-extrabold tracking-tighter mb-8">Ready to Build Something <span class="text-primary">Iconic?</span></h2>
+<p class="text-xl text-on-surface-variant mb-12">I'm currently accepting new projects for Q3 2024. Let's discuss your vision and turn it into a high-performance reality.</p>
+<div class="space-y-6">
+<a class="flex items-center gap-4 group" href="mailto:hello@architect.io">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center group-hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-white" data-icon="mail">mail</span>
+</div>
+<span class="text-lg font-bold">hello@architect.io</span>
+</a>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-white" data-icon="location_on">location_on</span>
+</div>
+<span class="text-lg font-bold">Remote Worldwide</span>
+</div>
+</div>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Your Name</label>
+<input class="w-full bg-surface-container-lowest border-none border-b-2 border-outline-variant/20 focus:border-primary focus:ring-0 text-white p-4 transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-lowest border-none border-b-2 border-outline-variant/20 focus:border-primary focus:ring-0 text-white p-4 transition-all" placeholder="john@company.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Project Interest</label>
+<select class="w-full bg-surface-container-lowest border-none border-b-2 border-outline-variant/20 focus:border-primary focus:ring-0 text-white p-4 transition-all">
+<option>Custom Web Application</option>
+<option>E-commerce Store</option>
+<option>Landing Page</option>
+<option>Other</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Project Details</label>
+<textarea class="w-full bg-surface-container-lowest border-none border-b-2 border-outline-variant/20 focus:border-primary focus:ring-0 text-white p-4 transition-all" placeholder="Tell me about your project goals..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-headline font-bold uppercase tracking-[0.2em] py-5 rounded-lg hover:shadow-[0_0_40px_rgba(0,218,243,0.3)] transition-all" type="submit">
+                            Send Message
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 bg-[#1C1B1B] border-t border-white/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-20 max-w-[1440px] mx-auto w-full gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-manrope font-bold text-[#00DAF3] text-xl">Architect.io</span>
+<p class="font-inter text-sm text-white/50 text-center md:text-left">© 2024 The Precision Architect. Built with intent.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-white/40 hover:text-[#00DAF3] transition-colors duration-300 text-sm font-medium" href="#">LinkedIn</a>
+<a class="text-white/40 hover:text-[#00DAF3] transition-colors duration-300 text-sm font-medium" href="#">GitHub</a>
+<a class="text-white/40 hover:text-[#00DAF3] transition-colors duration-300 text-sm font-medium" href="#">Twitter</a>
+<a class="text-white/40 hover:text-[#00DAF3] transition-colors duration-300 text-sm font-medium" href="#">Email</a>
+</div>
+</div>
+</footer>
+</body></html>
